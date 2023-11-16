@@ -1,0 +1,210 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+#logo-page {
+    width: 20%;
+    margin-bottom: 1.5rem;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+#title-status {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+}
+#title-status span{
+    color: #000;
+    font-weight: 600;
+}
+
+#form-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: .75rem;
+    margin-bottom: 3rem;
+}
+#form-signup.error {
+    margin-bottom: 0;
+}
+#input-email {
+    width: 100%;
+    padding: .85rem .75rem;
+    border-radius: 24px;
+    border: 1px solid hsl(223, 100%, 88%);
+    padding-left: 2rem;
+}
+#input-email::placeholder {
+    color: #c1cddb;     
+}
+#text-input-error {
+    display: none;
+    font-size: 12px;
+    color: hsl(354, 100%, 66%);
+    margin: -.25rem 0 .75rem 0;
+}
+#btn-notify {
+    width: 108%;
+    border-radius: 24px;
+    padding: .75rem;
+    background-color: hsl(223, 87%, 63%);
+    color: #ffffff;
+    font-weight: 600;
+    border: 0;
+    box-shadow: 0px 10px 20px #dce2fc;
+}
+
+/* Dashboard image */
+#img-dashboard {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+/* Social media and Copyright */
+.footer-info-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.footer-info-copyright p {
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+}
+
+.social-medias {
+    display: flex;
+    gap: 1rem;
+}
+.social-medias a * {
+    border: 1px solid #ebecf2;
+    border-radius: 100%;
+    padding: .5rem;
+    overflow: visible;
+}
+
+/* Footer */
+.creator-info {
+    text-align: center;
+    margin-top: 2rem;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 1024px) {
+    body {
+        justify-content: center;
+    }
+    main {
+        width: 65%;
+    }
+    .main-container {
+        margin-top: 0;
+    }
+    #title-status {
+        font-size: 3rem;
+    }
+    #title-status span {
+        font-weight: 700;
+    }
+    #text-subscribe {
+        font-size: 1.25rem;
+    }
+
+    #form-signup {
+        display: grid;
+        grid-template-columns: .7fr .3fr;
+        position: relative;
+    }
+    #form-signup.error {
+        margin-bottom: 3rem;
+    }     
+    #input-email {
+        width: unset;
+    }
+    #btn-notify {
+        padding: 1rem;
+    }
+    #btn-notify:hover {
+        background-color: hsl(223, 100%, 88%);
+    }
+    #text-input-error {
+        position: absolute;
+        top: 125%;
+        left: 5%;
+    }
+
+    #img-dashboard {
+        width: 78%;
+        margin-bottom: 2rem;
+    }
+
+    a svg:hover {
+        background-color: hsl(223, 87%, 63%);
+        border-radius: 100%;
+        fill: white;
+    }
+}
+@media (min-width: 1440px) {
+    main {
+        width: 55%;
+    }
+    #logo-page {
+        width: 15%;
+    }
+}
+@media (min-width: 1920px) {
+    body {
+        height: unset;
+    }
+    main {
+        width: 40%;
+    }
+    .main-container {
+        margin-top: 5rem;
+    }
+}
