@@ -138,12 +138,16 @@ main {
 @media (min-width: 1024px) {
     body {
         justify-content: center;
+        height: unset;
     }
     main {
         width: 65%;
     }
     .main-container {
-        margin-top: 0;
+        margin-top: 6rem;
+    }
+    #logo-page {
+        width: 15%;
     }
     #title-status {
         font-size: 3rem;
@@ -194,7 +198,7 @@ main {
         width: 55%;
     }
     #logo-page {
-        width: 15%;
+        width: 12%;
     }
 }
 @media (min-width: 1600px) {
