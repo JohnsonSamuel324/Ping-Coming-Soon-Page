@@ -197,7 +197,7 @@ main {
         width: 15%;
     }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1600px) {
     body {
         height: unset;
     }
